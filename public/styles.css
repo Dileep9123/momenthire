@@ -1,0 +1,861 @@
+body{
+   
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* Styles for Header and navbar - start */
+.header{
+    padding-left: 14.4%;
+    padding-right: 13%;
+    box-shadow: 1px 2px 4px rgb(189, 148, 189);
+    position: sticky;
+    z-index: 500;
+    top:0;
+  
+    background-color: white;
+}
+
+.navbar-brand, .nav-link{
+      color:violet;
+      text-decoration: none;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: violet;
+}
+
+.active {
+    border-bottom: 2px solid violet;
+}
+
+.login-button{
+    border: 0px;
+    color: white;
+    background-color: violet;
+    border-radius: 20px;
+    padding: 5px;
+    width: 75px;
+    font-size:14px;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+.profile-pic{
+    width: 35px;
+    height: 35px;
+    margin-left:15px;
+    position: relative;
+}
+
+.profile-popup{
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 1 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 10px;
+}
+/* Styles for Header and navbar - end  */
+
+/* Styles for Home screen - start */
+
+.home {
+    background-color: rgb(247, 234, 247);
+    padding: 1rem;
+    border-radius: 5px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.home-screen {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    width: 75%;
+    margin: 0 auto 0 auto;
+    background-color: rgb(247, 234, 247);
+    gap: 15px;
+}
+
+.meta-data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.meta-images{
+    border-radius: 20px;
+    width: 270px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.meta-images:hover{
+    border-radius: 20px;
+    position: relative;
+    width: 270px;
+    bottom:0.2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.jobs-internships {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.subtitle {
+    padding-top: 40px;
+   
+}
+
+.subtitle >  p{
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.jobs-image {
+    border-radius: 20px;
+    width: 270px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.jobs-image:hover {
+    border-radius: 20px;
+    width: 270px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position:relative;
+    bottom: 0.2rem;
+}
+
+.social-media{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.social-icons {
+    margin-right: 4px;
+    text-decoration: none;
+    color: black;
+}
+
+.social-icons:hover{
+    text-shadow: 0 0 20px white;
+}
+
+
+
+/* Styles for Home screen - stop */
+
+
+/* Styles for login and sign-up screen - start */
+.login{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    margin: 0 auto 0 auto;
+    width: 50%;
+    height: 80vh;
+    margin-top: 4%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+    border-bottom-left-radius: 100px;
+}
+.login-side-screen{
+
+    font-family: "Inter",sans-serif!important;
+    color: #1c4980;
+    font-size: 15px;
+    border-radius: 12px 60px 0;
+    background: #FFC700;
+    padding: 20px;
+    width: 284px;
+}
+
+.login-form{
+    padding-left: 7%;
+    padding-right:7%;
+    padding-top: 18%;
+    height: 80vh;
+}
+
+.signup-form {
+    padding-top: 10%;
+    padding-left: 7%;
+    padding-right:7%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.signup-form::-webkit-scrollbar {
+    width: 2px;
+}
+
+.form-floating {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Styles for login and sign-up screen - stop */
+
+/* Styles for login and sign-up screen - jobs and internships*/
+
+.job-info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.left-button {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: white;
+    border: 0;
+    border-right: 1px solid #cac4d0;
+    padding: 1rem 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .right-button {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: white;
+    border: 0;
+    padding: 1rem 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .left-button:hover,
+  .right-button:hover {
+    background-color: rgb(223, 184, 223);
+    color: white;
+  }
+  
+  .btn-container {
+    border-radius: 30px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.15);
+  }
+  
+  .left-button.active,
+  .right-button.active {
+    background-color: rgb(223, 184, 223);
+    color: purple;
+  }
+
+.jobs {
+    padding: 2rem;
+    padding-top: 6.2rem;
+    padding-bottom: 5.8rem;
+}
+
+
+.jobs-title{
+    text-align: center;
+    width: 100%;
+    font-family: 'Inter', serif;
+    font-size:2.5rem;
+    color: purple;
+}
+
+
+
+.bg-jobs{
+    margin-top: 3rem ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+
+}
+.bg-register{
+   
+    background-color: hsla(0, 0%, 100%, 1) !important;
+    backdrop-filter: saturate(200%) blur(0px);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.down-window {
+    background-color: rgb(241, 217, 241);
+    width: 100%;
+    height: 6rem;
+    padding-bottom: 0px;
+    padding-top: 4px;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    align-items: center;
+  }
+
+@keyframes mymove1 {
+    from { top: 0px; }
+    to { top: 70px; }
+}
+
+
+.animated {
+    animation: mymove1 1s;
+}
+
+.jobs-header{
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(241, 217, 241);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-top: 0.4rem;
+}
+/* Styles for login and sign-up screen - jobs and internships*/
+
+/*About us - start*/
+.about-section{
+    overflow-x: hidden;
+}
+.animated-left {
+    opacity: 0;
+    transform: translateX(-5%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+.animated-left.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animated-right {
+    opacity: 0;
+    transform: translateX(5%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+.animated-right.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+  
+
+.aboutus-container-left {
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 75%;
+    margin: 0 auto 0 auto;
+  }
+  
+  .aboutus-container-right {
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    width: 75%;
+    margin: 0 auto 0 auto;
+ }
+  
+
+.blank{
+    background-color: purple;
+    width: 40%;
+ }
+
+ .desc-left{
+   text-align: left;
+ }
+
+ .desc-right{
+    text-align: left;
+    padding-left: 8rem;
+}
+
+.about-heading {
+    color: purple;
+    font-weight: bold;
+}
+
+.about-description{
+    font-weight: 100;
+}
+
+.underline-left{
+    border-bottom: 0.2rem solid black;
+}
+
+.underline-right{
+    border-bottom: 0.2rem solid black;
+}
+
+ .about-subheading{
+    font-weight: bolder;
+ }
+
+ .grid-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4.8fr 0.4fr 4.8fr;
+    width: 75%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0 auto 0 auto;
+ }
+
+ .grid-display-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 75%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0 auto 0 auto;
+ }
+
+ .grid-display-3{
+    display: grid;
+    grid-template-columns: 1.5fr 4fr 4fr;
+    width: 75%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0 auto 0 auto;
+ }
+
+ .grid-display-4{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 75%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0 auto 0 auto;
+ }
+
+ /*About us - end*/
+
+ /*contact - us*/
+ .contact{
+    padding-top: 5rem;
+    padding-left: 5%;
+    padding-right:5%;
+    background-color: rgb(247, 234, 247);
+    margin:0;
+ }
+ .contact-us{
+    display: flex;
+    justify-content: space-between;
+    margin:0;
+
+ }
+
+ .contact-info{
+   
+  width:50%;
+  padding-right: 10%;
+  margin:0;
+ }
+
+ .contact-info >  p{
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.contact-info >  h5{
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-image-container{
+    height: 50%;
+    width: 50%;
+    padding-top: 8.2rem;
+}
+.contact-image{
+    height: 90%;
+    width: 100%;
+    margin: 0;
+}
+
+.contact-button{
+    text-align: center;
+    background: #11cdd4;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display:inline-block;
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.contact-details {
+   margin-top: 1rem;
+   margin-left:0.5rem;
+}
+ /*contact - end*/
+
+/*footer - start*/
+.bottom-container {
+    background-color: rgb(121, 65, 121);
+    padding: 3rem 0px 1rem;
+    text-align: center;
+}
+.footer-link{
+    text-align: center;
+    color: white;
+    margin: 5px 20px;
+    text-decoration: none;
+}
+
+
+
+.copy-right {
+    color: #eaf6f6;
+    font-size: 0.75rem;
+    padding: 2rem 0 1rem;
+}
+
+.contact-middle {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 75%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0 auto 0 auto;
+}
+
+.contact-middle-side{
+ width: 45%;
+ height: 100%;
+ padding-left: 10%;
+ border-right: 10px solid purple;
+ 
+}
+
+.map-image{
+
+    width: 55%;
+    text-align: right;
+}
+
+.footer-link:hover{
+    text-align: center;
+    color: white;
+    margin: 5px 20px;
+    text-decoration: none;
+    text-shadow: 0 0 20px white;
+    
+}
+
+
+
+/*footer - end*/
+
+
+/*features - start*/
+.features-container{
+    padding : 5% 10%;
+    text-align: center;
+}
+#features {
+background-color: #fff;
+position: relative;
+}
+.features-heading {
+font-weight: bold;
+}
+.feature-box {
+padding : 3%;
+
+}
+.icon{
+color : violet;
+margin-bottom: 1rem;
+}
+.icon:hover{
+color : rgb(121, 65, 121);
+}
+
+/*features - stop*/
+
+/*testmonials - start*/
+#testimonials{
+background-color: rgb(247, 234, 247);
+padding: 3% 0%;
+text-align: center;
+color : black;
+}
+.testimonial-text {
+font-weight : bolder;
+line-height: 1.5;
+color: violet;
+}
+.testimonial-image {
+width : 15%;
+border-radius: 100%;
+}
+
+#press {
+    background-color: rgb(247, 234, 247);
+    display: flex;
+    padding-left:10rem;
+    padding-right: 10rem;
+    justify-content: space-around;
+    padding-bottom: 3%;
+}
+.logo {
+    width : 15%;
+}
+
+/*testmonials - stop*/
+
+
+/* resumr - start */
+.resume{
+    height: 40rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.resume-heading{
+    display: flex;
+    padding-bottom: 3.5rem;
+    background-color: rgb(247, 234, 247);
+    font-family: 'Inter';
+}
+
+.resume-sideheading{
+    width: 60%;
+    padding-top: 4rem;
+    padding-left: 12rem;
+    
+
+}
+
+
+.resume-container{
+    padding-top: 4rem;
+    padding-left: 6rem;
+}
+.resume-image{
+    margin-left: 2rem;
+    height:100%;
+    width: 75%;
+}
+
+.resume-section {
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.perfect-rs-head {
+  --rem: 16;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 0 3rem;
+  font-size: 2.0rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.perfect-rs-desc {
+  --rem: 16;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 0 3rem;
+  margin-bottom: 0;
+}
+
+.resume-section > h2 {
+--rem: 16;
+color: #000;
+box-sizing: border-box;
+font-family: 'Frank Ruhl Libre',serif;
+font-size: 3.8rem;
+line-height: 5.8rem;
+font-weight: 700;
+text-align: center;
+margin-bottom: 2rem;
+}
+
+/* resume - end */
+
+/*model - start */
+
+.model-wrapper{
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-color: rgb(189, 189, 189, 0.9);
+
+}
+
+.model-container{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: white;
+   padding: 2rem 3rem;
+   border-radius: 1rem;
+   text-align: center;
+   max-width: 30rem;
+}
+
+
+.model-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+/*-- internship section --*/
+
+.internship-item {
+}
+.internship-card {
+  display: grid;
+  width: 88%;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 0 auto 0 auto;
+  background-color: rgb(247, 234, 247);
+}
+
+.intern-info1 {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.intern-info2 {
+  display: flex;
+  gap: 3rem;
+}
+
+.info2-item {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.intern-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intern-title {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 1.75rem;
+}
+
+.intern-company {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.intern-apply {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.intern-button {
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 10px;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+/* ------ */
+
+.internship-desc {
+  width: 78%;
+  margin: 0 auto 0 auto;
+  background-color: rgb(247, 234, 247);
+  border-radius: 1rem;
+  padding-bottom: 2rem;
+}
+
+.internship-desc .internship-card {
+  width: 100%;
+  margin: 1.5rem auto 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.intern-title {
+  font-size: 1.5rem;
+}
+
+.intern-details {
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.intern-details-heading {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 1.5rem;
+}
+
+.intern-deatils-desc {
+}
+
+.internships-container{
+  
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  gap: 4rem;
+  margin-bottom: 5rem;
+   
+}
+
+.jobs .form-control{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15), 0px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+/*-- internship section --*/
+
+
+
+
+  
